@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-color-destaque: #85ff9c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 90%;
+    padding: 1em;
+    margin: 1em auto;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: .5em;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -3px 3px 5px var(--font-color-destaque);
+}
+
+body {
+    text-align: justify;
+    background-color: rgb(231, 233, 233);
+}
+
+
+header {
+    height: 120vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    border-bottom: 2px solid var(--font-color-destaque);
+}
+
+header .intro {
+    width: 45%;
+    margin: 0 auto;
+}
+
+header .intro h1 {
+
+    font-size: 5em;
+    text-align: center;
+    font-variant: small-caps;
+    text-shadow: -1px 1px 1px #000;
+    color: var(--font-color-destaque);
+}
+
+header .intro h2,
+header .intro h3 {
+    font-size: 1em;
+    font-style: oblique;
+    text-align: center;
+    margin-block: 2.5em;
+    text-transform: uppercase;
+}
+
+header .elton-foto {
+    width: 45%;
+    height: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+header .elton-foto img {
+    border-radius: 50%;
+}
+
+section {
+    gap: 1em;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-block: 3em;
+}
+
+section div {
+    width: 45%;
+    height: 100%;
+
+}
+
+section .area-sobre h2 {
+    font-size: 2em;
+    text-align: center;
+    color: var(--font-color-destaque);
+
+
+    font-variant: small-caps;
+    text-shadow: -1px 1px 1px #000;
+    color: var(--font-color-destaque);
+
+}
+
+section div.area-pix {
+    width: 50%;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center !important;
+
+    border: 2px solid var(--font-color-destaque);
+    border-left-width: 20px;
+    
+}
+
+section div.area-pix h2 {
+    font-size: 2em;
+    font-variant: small-caps;
+    text-shadow: -1px 1px 1px #000;
+    color: var(--font-color-destaque);
+
+}
+
+section span.logo-pix {
+    display: flex;
+    margin: 1em auto;
+    align-items: center;
+}
+
+section span.logo-pix img {
+    width: 30px;
+    height: 30px;
+
+}
+
+section span.logo-pix h3 {
+    font-size: 2em;
+    font-weight: 100;
+}
+
+section div.area-pix img {
+    width: 40%;
+}
+
+section div.area-pix button {
+    width: 70%;
+    border: none;
+    padding: 1em;
+    border-radius: 2em;
+
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bolder;
+    text-transform: uppercase;
+
+    background-color: var(--font-color-destaque);
+}
+
+a.pix-key {
+    padding: 1em;
+    font-size: .7em;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+img {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+p {
+    line-height: 2em;
+    margin-block: .5em;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+span {
+    font-weight: bolder;
+    color: var(--font-color-destaque);
+}
+
+::-webkit-scrollbar {
+    width: .1px;
+}
