@@ -13,12 +13,10 @@
 }
 
 .container {
-    width: 90%;
+    width: 320px;
     padding: 1em;
     margin: 1em auto;
 
-    display: flex;
-    flex-direction: column;
 
     border-radius: .5em;
     background-color: rgb(255, 255, 255);
@@ -30,93 +28,75 @@ body {
     background-color: rgb(231, 233, 233);
 }
 
+/*===========================================*/
 
-header {
-    height: 120vh;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    border-bottom: 2px solid var(--font-color-destaque);
-}
-
-header .intro {
-    width: 45%;
+.intro {
+    width: 100%;
     margin: 0 auto;
+    padding-block: 2em;
+
+    border-bottom: 2px solid var(--font-color-destaque)
 }
 
-header .intro h1 {
+.intro h2 {
 
-    font-size: 5em;
+    font-size: 2em;
     text-align: center;
     font-variant: small-caps;
     text-shadow: -1px 1px 1px #000;
     color: var(--font-color-destaque);
 }
 
-header .intro h2,
-header .intro h3 {
+.intro h3 {
     font-size: 1em;
+    text-align: left;
     font-style: oblique;
-    text-align: center;
-    margin-block: 2.5em;
     text-transform: uppercase;
+
+    margin-block: 2.5em 0;
 }
 
-header .elton-foto {
-    width: 45%;
-    height: 80%;
-    margin: auto;
-    text-align: center;
-}
+.elton-foto {
+    width: 90%;
+    display: block;
+    margin: 1em auto;
 
-header .elton-foto img {
     border-radius: 50%;
 }
 
-section {
-    gap: 1em;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    padding-block: 3em;
+.area-sobre{
+    width: 100%;
+    margin: 0 auto;
+    padding-block: 2em;
+
+    border-bottom: 2px solid var(--font-color-destaque)
 }
 
-section div {
-    width: 45%;
-    height: 100%;
 
-}
-
-section .area-sobre h2 {
+.area-sobre h2 {
     font-size: 2em;
     text-align: center;
-    color: var(--font-color-destaque);
-
-
     font-variant: small-caps;
     text-shadow: -1px 1px 1px #000;
     color: var(--font-color-destaque);
-
 }
 
-section div.area-pix {
-    width: 50%;
-    padding: 1em;
+/*=========================================*/
+
+.area-pix {
+
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
 
-    text-align: center !important;
+    text-align: center ;
 
-    border: 2px solid var(--font-color-destaque);
-    border-left-width: 20px;
-    
+    padding-block: 2em;
+
+    border: 1px solid var(--font-color-destaque);
 }
 
-section div.area-pix h2 {
+.area-pix h2 {
     font-size: 2em;
     font-variant: small-caps;
     text-shadow: -1px 1px 1px #000;
@@ -124,56 +104,52 @@ section div.area-pix h2 {
 
 }
 
-section span.logo-pix {
+.logo-pix {
     display: flex;
     margin: 1em auto;
     align-items: center;
+    flex-direction: row;
 }
 
-section span.logo-pix img {
-    width: 30px;
-    height: 30px;
-
+.logo-pix img {
+    width: 2em;
+    height: 2em;
 }
 
-section span.logo-pix h3 {
-    font-size: 2em;
+.logo-pix h3 {
+    font-size: 2.5em;
     font-weight: 100;
 }
 
-section div.area-pix img {
-    width: 40%;
+.qr-code {
+    width: 12em;
 }
 
-section div.area-pix button {
-    width: 70%;
+.area-pix p{
+    font-size: .9em;
+}
+
+.btn-phone {
     border: none;
-    padding: 1em;
+    padding: .9em;
     border-radius: 2em;
 
     color: #fff;
     font-size: 1.3em;
-    font-weight: bolder;
-    text-transform: uppercase;
 
     background-color: var(--font-color-destaque);
 }
 
-a.pix-key {
-    padding: 1em;
-    font-size: .7em;
+p.pix-key{
+    font-size: .5em;
     text-align: center;
     text-decoration: underline;
 }
 
-
-img {
-    width: 90%;
-    height: 90%;
-    margin: auto;
-}
+/*=====================================*/
 
 p {
+    width: 100%;
     line-height: 2em;
     margin-block: .5em;
 }
@@ -185,6 +161,7 @@ a {
 
 span {
     font-weight: bolder;
+    font-variant: small-caps;
     color: var(--font-color-destaque);
 }
 
