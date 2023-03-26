@@ -98,6 +98,7 @@ body {
 
 .area-sobre h2 {
     font-size: 2em;
+    text-align: left;
     font-variant: small-caps;
     text-shadow: -1px 1px 1px #000;
     color: var(--font-color-destaque);
@@ -115,6 +116,7 @@ body {
     padding-block: 2em;
 
     border: 1px solid var(--font-color-destaque);
+    border-right-width: .4em; 
 }
 
 .area-pix h2 {
@@ -150,18 +152,22 @@ body {
     font-size: .9em;
 }
 
-.btn-phone {
-    padding: .9em;
-    
-    display: block;
+
+.btn-phone{
+    padding: 1em 0em;
     margin-block: 2em;
-    
+
     color: #fff;
     font-size: 1.3em;
+    text-align: center;
     
     border: none;
     border-radius: 2em;
     background-color: var(--font-color-destaque);
+}
+
+.btn-phone:focus {
+    outline: none;
 }
 
 .btn-copy{
@@ -175,22 +181,34 @@ body {
 }
 
 .btn-copy:active{
-   transform: scale(1.1);
+    background: none;
+    transform: scale(1.2);
+}
+
+.btn-copy:focus{
+    background: none;
 }
 
 .area-copy-btn {
-    width: 100%;
-
+    gap: 1em;
     display: flex;
+    align-items: center;
     flex-direction: row;
-    justify-content: space-around;
 }
 
-p.pix-key{
-    cursor: pointer;
+p.pix-key-bank{
+    margin-block: 0em 3em;
+
     font-size: .5em;
-    text-align: center;
-    text-decoration: underline;
+
+    border:none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+p.pix-key:focus{
+    outline: none;
+    background: none;
 }
 
 /*=====================================*/

@@ -8,11 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="scricpt.js" defer></script>
-    <style>
-        iframe {
-            color: #5fc271;
-        }
-    </style>
 </head>
 
 <body>
@@ -33,7 +28,7 @@
                 <h2>Colabore!</h2>
                 <p>
                     Que situação difícil! Nunca passou pelas nossas cabeças que um dia precisaríamos criar uma vaquinha
-                    para essa finalidade. Somos os irmão do Elton, conhecidos como Tlbl.
+                    para essa finalidade. Somos os irmãos do Elton, conhecidos como Tibi.
                 </p>
                 <h3>O acidente</h3>
                 <p>
@@ -77,15 +72,13 @@
 
                 <div class="area-copy-btn">
 
-                    <button class="btn-phone" id="pix_key_phone">
-                        (11)96545-6956
-                    </button>
-
-                    <button 
-                        class="btn-copy" 
-                        onclick="getPixKey(pix_key_phone.innerText, 'copy')"
+                    <input id="pix_key_phone" 
+                        class="btn-phone" 
+                        type="text" value="(11)96545-6956" readonly
                     >
-                        <img src="src/svg/copy-outline.svg"></img>
+
+                    <button class="btn-copy" onclick="getPixKey(pix_key_phone)">
+                        <img src="src/svg/copy-outline.svg" alt="Copy Button"></img>
                     </button>
 
                 </div>
@@ -96,10 +89,19 @@
                     Banco: Bradesco
                 </p>
 
-                <p class="pix-key" id="pix_key_bank" onclick="getPixKey(pix_key_bank.innerText, 'copy')">
-                    00020126580014BR.GOV.BCB.PIX0114+55119654569560218Vaquinha do Elton
-                    5204000053039865802BR5925ELISANDRA CRISTINA DA SIL6009SAO PAULO62070503***6304D269
+                <input id="pix_key_bank"
+                    style="display: none;"
+                    value="00020126580014BR.GOV.BCB.PIX0114+55119654569560218Vaquinha doElton5204000053039865802BR5925ELISANDRACRISTINADASIL6009SAOPAULO62070503***6304D269"
+                    readonly>
+                </input>
+
+                <p class="pix-key-bank">
+                    00020126580014BR.GOV.BCB.PIX0114+55119654569560218Vaquinha do Elton5204000053039865802BR5925ELISANDRACRISTINADASIL6009SAOPAULO62070503***6304D269"
                 </p>
+
+                <button class="btn-copy" onclick="getPixKey(pix_key_bank)">
+                    <img src="src/svg/copy-outline.svg"></img>
+                </button>
 
 
 
@@ -134,10 +136,7 @@
             </div>
 
         </section>
-
-        <footer>
-
-        </footer>
+        
     </main>
 </body>
 
