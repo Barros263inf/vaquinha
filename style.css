@@ -8,7 +8,7 @@
 }
 
 :root {
-    --font-color-destaque: #5fc271;
+    --font-color-main: #5fc271;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -21,7 +21,7 @@
 
     border-radius: .5em;
     background-color: rgb(255, 255, 255);
-    box-shadow: -3px 3px 5px var(--font-color-destaque);
+    box-shadow: -3px 3px 5px var(--font-color-main);
 }
 
 body {
@@ -36,7 +36,7 @@ body {
     margin: 0 auto;
     padding-block: 2em;
 
-    border-bottom: 2px solid var(--font-color-destaque)
+    border-bottom: 2px solid var(--font-color-main)
 }
 
 .home h3{
@@ -44,7 +44,7 @@ body {
     text-align: center;
     font-variant: small-caps;
     text-shadow: -1px 1px 1px #000;
-    color: var(--font-color-destaque);
+    color: var(--font-color-main);
 }
 
 .home img {
@@ -59,7 +59,7 @@ body {
     margin: 0 auto;
     padding-block: 2em;
 
-    border-bottom: 2px solid var(--font-color-destaque)
+    border-bottom: 2px solid var(--font-color-main)
 }
 
 .intro h2 {
@@ -67,7 +67,7 @@ body {
     text-align: center;
     font-variant: small-caps;
     text-shadow: -1px 1px 1px #000;
-    color: var(--font-color-destaque);
+    color: var(--font-color-main);
 }
 
 .intro h3 {
@@ -79,7 +79,7 @@ body {
     margin-block: 2.5em 0;
 }
 
-.elton-foto {
+.elton-photo {
     width: 90%;
     display: block;
     margin: 1em auto;
@@ -87,21 +87,21 @@ body {
     border-radius: 50%;
 }
 
-.area-sobre{
+.area-about{
     width: 100%;
     margin: 0 auto;
     padding-block: 2em;
 
-    border-bottom: 2px solid var(--font-color-destaque)
+    border-bottom: 2px solid var(--font-color-main)
 }
 
 
-.area-sobre h2 {
+.area-about h2 {
     font-size: 2em;
     text-align: left;
     font-variant: small-caps;
     text-shadow: -1px 1px 1px #000;
-    color: var(--font-color-destaque);
+    color: var(--font-color-main);
 }
 
 /*=========================================*/
@@ -115,7 +115,7 @@ body {
 
     padding-block: 2em;
 
-    border: 1px solid var(--font-color-destaque);
+    border: 1px solid var(--font-color-main);
     border-right-width: .4em; 
 }
 
@@ -123,7 +123,7 @@ body {
     font-size: 2em;
     font-variant: small-caps;
     text-shadow: -1px 1px 1px #000;
-    color: var(--font-color-destaque);
+    color: var(--font-color-main);
 
 }
 
@@ -163,7 +163,7 @@ body {
     
     border: none;
     border-radius: 2em;
-    background-color: var(--font-color-destaque);
+    background-color: var(--font-color-main);
 }
 
 .btn-phone:focus {
@@ -206,14 +206,9 @@ p.pix-key-bank{
     text-decoration: none;
 }
 
-p.pix-key:focus{
-    outline: none;
-    background: none;
-}
-
 /*=====================================*/
 
-.equipamentos {
+.equipment {
     width: 100%;
     margin: 0 auto;
     padding-block: 2em;
@@ -221,14 +216,14 @@ p.pix-key:focus{
     //border-bottom: 2px solid var(--font-color-destaque)
 }
 
-.equipamentos h2 {
+.equipment h2 {
     font-size: 2em;
     font-variant: small-caps;
     text-shadow: -1px 1px 1px #000;
-    color: var(--font-color-destaque);
+    color: var(--font-color-main);
 }
 
-.equipamentos .fotos {
+.equipment .photo {
     width: 100%;
 
     gap: .5em;
@@ -238,16 +233,16 @@ p.pix-key:focus{
     justify-content: space-around;
 }
 
-.equipamentos .fotos img{
+.equipment .photo img{
     width: 45%;
 
     border-radius: 100%;
-    border: 1px solid var(--font-color-destaque);
+    border: 1px solid var(--font-color-main);
 
     transition: all 500ms;
 }
 
-.equipamentos .fotos img:hover {
+.equipment .photo img:hover {
 
     transform: scale(1.2);
     border-radius: 0;
@@ -269,7 +264,7 @@ a {
 span {
     font-weight: bolder;
     font-variant: small-caps;
-    color: var(--font-color-destaque);
+    color: var(--font-color-main);
 }
 
 ::-webkit-scrollbar {
