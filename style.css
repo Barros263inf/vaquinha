@@ -113,10 +113,12 @@ body {
 
     text-align: center ;
 
+    width: 100%;
+
     padding-block: 2em;
 
     border: 1px solid var(--font-color-main);
-    border-right-width: .4em; 
+    border-right-width: .2em; 
 }
 
 .area-pix h2 {
@@ -199,9 +201,10 @@ body {
 p.pix-key-bank{
     margin-block: 0em 3em;
 
-    font-size: .5em;
+    font-size: .7em;
+    text-align: center;
 
-    border:none;
+    border: none;
     cursor: pointer;
     text-decoration: none;
 }

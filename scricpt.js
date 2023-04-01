@@ -1,6 +1,11 @@
 
 function getPixKey(key) {
-    let data = key.value;
-    navigator.clipboard.writeText(data.trim());
-    alert(`chave copiada: ${data}`)
+
+    const data = key;
+    data.select();
+    data.setSelectionRange(0, 9999);
+    document.execCommand("copy");
+
+    navigator.clipboard.writeText(data.value);
+    alert(`chave copiada: ${data.value}`);
 }
