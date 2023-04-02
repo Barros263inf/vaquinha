@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+:focus{
+    border: none;
+    outline: none;
+}
+
 :root {
     --font-color-main: #5fc271;
     font-family: Arial, Helvetica, sans-serif;
@@ -198,14 +203,16 @@ body {
     flex-direction: row;
 }
 
-p.pix-key-bank{
-    margin-block: 0em 3em;
-
-    font-size: .7em;
-    text-align: center;
-
+textarea.pix-key-bank{
+    width: 99%;
+    height: 8em; 
+    resize: none;
     border: none;
     cursor: pointer;
+    overflow: hidden;
+   
+    font-size: 1em;
+    text-align: center;
     text-decoration: none;
 }
 
@@ -246,7 +253,6 @@ p.pix-key-bank{
 }
 
 .equipment .photo img:hover {
-
     transform: scale(1.2);
     border-radius: 0;
 }
@@ -271,5 +277,10 @@ span {
 }
 
 ::-webkit-scrollbar {
-    width: .1px;
+    width: .3em;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 1em;
+    background-color: var(--font-color-main);
 }
